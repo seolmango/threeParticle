@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import math
 plt.rcParams['axes.unicode_minus'] = False
 
-ALHPA = 0.012174
+ALPHA = 0.012174
 
 def potential(x, y):
-    return -(1 - ALHPA) / math.sqrt((x-ALHPA)**2 + y**2) - ALHPA / math.sqrt((x+1-ALHPA)**2 + y**2) - (x ** 2 + y ** 2) / 2
+    return -(1 - ALPHA) / math.sqrt((x - ALPHA) ** 2 + y ** 2) - ALPHA / math.sqrt((x + 1 - ALPHA) ** 2 + y ** 2) - (x ** 2 + y ** 2) / 2
 
 print(potential(-1, 0))
 size = 100
@@ -19,7 +19,7 @@ Z = []
 for i in range(size):
     Z.append([])
     for j in range(size):
-        Z[i].append(max(potential(X[i][j], Y[i][j]), -2.25))
+        Z[i].append(max(potential(X[i][j], Y[i][j]), -1.8))
 Z = np.array(Z)
 print(Z.max())
 print(Z.min())
