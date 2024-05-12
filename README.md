@@ -35,3 +35,9 @@ potential.py
 ![img.png](img.png)
 
 퍼텐셜 그림과 함께 그릴 수 있습니다.
+
+## 더 알아보기
+
+자세한 수식의 유도 과정이나 결과의 해석은 아래 pdf를 확인하세요.
+
+[pdf](./output.pdf)
